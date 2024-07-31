@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Dom || remove&add</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+   <ul class="language">
+    <li>
+        javascript
+    </li>
+   </ul>
+   <script>
+    function addlang (alllang) {
+     const li =  document.createElement("li")
+     li.innerHTML = `${alllang}`
+     document.querySelector('.language').appendChild(li)
+        
+    }                                    // function definition:
+    addlang("python")
+    addlang("ruby")    
+    
+    // optimize method:
+    function addopiway (lang) {
+        const li =  document.createElement("li")
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+        
+    }
+    addopiway("react")
+
+    // edit the text :
+    const secondlang = document.querySelector("li:nth-child(2)")
+    console.log(secondlang);
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondlang.replaceWith(newli)
+
+    // 2nd method:
+
+    const firstlang =  document.querySelector("li:nth-child(1)")
+    firstlang.outerHTML = "<li>type script </li>"
+    
+    //remove  the text:
+   
+   /*
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()                                                           */
+
+
+
+
+   </script>
+</body>
+</html>

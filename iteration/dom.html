@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom learning</title>
+</head>
+<body style="background-color: beige; color: black;">
+   <div class="parent">
+    <div class="day">monday</div>
+    <div class="day">tuesday</div>
+    <div class="day">trusday</div>
+   </div>
+
+   <script>
+    const parent = document.querySelector('.parent')
+    /* console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);    */
+    
+    for (let i = 0; i < parent.children.length; i++) {
+       console.log(parent.children[i].innerHTML);
+        
+    }
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+    const val = document.querySelector('.day')
+    console.log(val);
+    console.log(val.parentElement);                 // we can also find out the next child by (nextElementSibling)
+
+
+    console.log("NODES :", parent.childNodes);
+    
+     
+   </script>
+    </body>
+
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "user"
+    div.id = 765
+    div.setAttribute("tittle", "generated tittle")
+    div.style.padding = "15px"
+    div.style.backgroundColor = "green"
+    // div.innerText ="day one of learning DOM"             // this is use to manipulate the text of document
+   const addtext =  document.createTextNode ("day one of learning DOM")
+   div.appendChild(addtext)                                           // use to attach child with parent div
+
+   document.body.appendChild(div)
+    
+</script>
+</html>

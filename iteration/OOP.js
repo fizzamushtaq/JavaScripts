@@ -72,5 +72,3 @@ table.printMe()
 // The newly object is return: after that the constructor function has been called, if it does not return a non primitive value ( object array function etc)  the newly created object is returned.
 
 
-// ptototype. js
-

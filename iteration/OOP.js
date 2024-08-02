@@ -15,13 +15,15 @@ console.log(user.username);
 // it is use to prevent from overwrite the code
 //  constructore property is the reference of the give function:
  
-function log(username, userCount, signedin ) {
-   this.username = username;
-   this.userCount = userCount;
-   this.signedin = signedin
+class log {
+    constructor(username, userCount, signedin) {
+        this.username = username;
+        this.userCount = userCount;
+        this.signedin = signedin;
 
-   return this
-    
+        return this;
+
+    }
 }
  const userOne =  new log("fiza", 12 , true)
  console.log(userOne.constructor);
@@ -42,19 +44,21 @@ multiplynum.power = 2
 // console.log(multiplynum.power);
 // console.log(multiplynum.prototype);
 
-function createuser (userName, score ) {
-    this.username = userName
-    this.score = score
-    
+class createuser {
+    constructor(userName, score) {
+        this.username = userName;
+        this.score = score;
+
+    }
+    increment() {
+        this.score++;
+    }
+    printMe() {
+        console.log(`this is the price of table is ${this.score}`);
+
+    }
 }
 
-createuser.prototype.increment = function () {
-    this.score++
-}
-createuser.prototype.printMe = function () {
-    console.log(`this is the price of table is ${this.score}`);
-    
-}
 const table = new createuser('table', 50)
 const chair = new createuser("chair", 100)
 table.printMe()

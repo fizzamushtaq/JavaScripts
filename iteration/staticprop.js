@@ -12,6 +12,12 @@ class myuser {
     }
 }
 const hafsa = new myuser("hafsa")
-console.log(hafsa);
+// console.log(hafsa);
 
 // console.log(hafsa.createId())
+
+/*    Math.PI = 3.1456... can be change or not  */
+
+const mathpi = Object.getOwnPropertyDescriptor(Math, "PI" )
+console.log(mathpi);
+

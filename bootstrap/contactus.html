@@ -47,7 +47,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -69,7 +69,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:5500/contactus.html">Contact Us</a>
+              <a class="nav-link active" href="#">Contact Us</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -87,98 +87,32 @@
       </div>
     </nav>
     <div class="container my-4">
-      <div class="row featurette d-flex align-items-center">
-        <div class="col-md-6">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Innovative Solutions <span class="text-muted">"At TechTide, </span>
-          </h2>
-          <p class="lead">
-            we are committed to delivering cutting-edge technology solutions
-            that drive innovation and efficiency. Our team constantly explores
-            new technologies to offer the best to our clients."
-          </p>
+      <h2>Contact Us </h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="col-md-4">
-          <img
-          class="img-fluid"
-            width="450"
-            height="300"
-            src="photos/work.jpg"
-            alt="Work Image"
-          />
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-      </div>
-    </div>
-    <div class="container my-4">
-      <div class="row featurette d-flex align-items-center">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Expert Team <span class="text-muted"></span>
-          </h2>
-          <p class="lead">
-            "Our team consists of skilled professionals with deep expertise in
-            various technology domains. We believe in continuous learning and
-            adapting to the latest trends to provide exceptional service."
-          </p>
+        <div class="mb-3">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Select any One</option>
+                <option value="1">technology</option>
+                <option value="2">web Development</option>
+                <option value="3">Machine Learning</option>
+              </select>
         </div>
-        <div class="col-md-5">
-          <img
-          class="img-fluid"
-            width="450"
-            height="300"
-            src="photos/team.jpg"
-            alt="Work Image"
-          />
+
+        <div class="mb-3 form-check my-4">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-      </div>
-    </div>
-    <div class="container my-4">
-      <div class="row featurette d-flex align-items-center">
-        <div class="col-md-6">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Client-Centric Approach
-            <span class="text-muted">"At TechTide, </span>
-          </h2>
-          <p class="lead">
-            "We place our clients at the heart of everything we do.
-            Understanding their unique needs and delivering customized solutions
-            is our top priority, ensuring a seamless experience from start to
-            finish."
-          </p>
-        </div>
-        <div class="col-md-6">
-          <img
-          class="img-fluid"
-            width="450"
-            height="300"
-            src="photos/future.jpg"
-            alt="Work Image"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="container my-4">
-      <div class="row featurette d-flex align-items-center">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Sustainable Technology<span class="text-muted"></span>
-          </h2>
-          <p class="lead">
-            "Sustainability is at the core of our values. We strive to implement
-            eco-friendly practices in our projects, promoting responsible use of
-            technology to build a better future."
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img
-          class="img-fluid"
-            width="450"
-            height="300"
-            src="photos/customer.jpg"
-            alt="Work Image"
-          />
-        </div>
-      </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
 
     <link
